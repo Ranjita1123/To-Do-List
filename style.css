@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #2b5876, #4e4376);
+    color: #fff;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+input {
+    width: 85%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    font-size: 1em;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    box-shadow: inset 3px 3px 6px rgba(255, 255, 255, 0.1),
+                inset -3px -3px 6px rgba(0, 0, 0, 0.2);
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.add-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: #ff6f61;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.add-btn:hover {
+    background: #e65c50;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.task-item:hover {
+    transform: scale(1.05);
+}
+
+.delete-btn {
+    background: #ff4444;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+}
+
+       
